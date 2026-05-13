@@ -16,5 +16,4 @@ document.getElementById("hitung").addEventListener("click", function () {
     hasil = angka1 / angka2;
   }
 
-  document.querySelector("h1").innerText = "Hasil: " + hasil;
-});
+  document.getElementById("hasil").innerText = "Hasil: " + hasil;
