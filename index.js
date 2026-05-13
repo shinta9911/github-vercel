@@ -1,10 +1,10 @@
 document.getElementById("hitung").addEventListener("click", function () {
-  const angka1 = parseFloat(document.getElementById("angka1").value);
-  const angka2 = parseFloat(document.getElementById("angka2").value);
+  let angka1 = parseFloat(document.getElementById("angka1").value);
+  let angka2 = parseFloat(document.getElementById("angka2").value);
 
-  const operasi = document.querySelector('input[name="operasi"]:checked').value;
+  let operasi = document.querySelector('input[name="operasi"]:checked').value;
 
-  let hasil = 0;
+  let hasil;
 
   if (operasi === "penjumlahan") {
     hasil = angka1 + angka2;
@@ -16,4 +16,5 @@ document.getElementById("hitung").addEventListener("click", function () {
     hasil = angka1 / angka2;
   }
 
-  document.getElementById("hasil").innerText = "Hasil: " + hasil;
+  document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+});

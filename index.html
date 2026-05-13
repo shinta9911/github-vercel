@@ -1,29 +1,32 @@
-<!DOCTYPE html><html>
-  <head>
-    <meta charset="utf-8">
-    <title>Simple DOM example</title>
-  </head>
-  <body>
-    Angka 1: <input type="text" id="angka1" /><br />
-    Angka 2: <input type="text" id="angka2" /><br />
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kalkulator</title>
+</head>
+<body>
 
-    Operasi:
-    <input type="radio" checked value="penjumlahan" name="operasi" /> Penjumlahan
-    <input type="radio" value="pengurangan" name="operasi" /> Pengurangan
-    <input type="radio" value="perkalian" name="operasi" /> Perkalian
-    <input type="radio" value="pembagian" name="operasi" /> Pembagian
+  Angka 1:
+  <input type="text" id="angka1"><br><br>
 
-    <br />
+  Angka 2:
+  <input type="text" id="angka2"><br><br>
 
-    <button id="hitung">Hitung</button>
+  Operasi:
+  <input type="radio" name="operasi" value="penjumlahan" checked> Penjumlahan
+  <input type="radio" name="operasi" value="pengurangan"> Pengurangan
+  <input type="radio" name="operasi" value="perkalian"> Perkalian
+  <input type="radio" name="operasi" value="pembagian"> Pembagian
 
-    <h1 id="hasil" style="text-align: center; color: red">
-  Hasil
-</h1>
+  <br><br>
 
-    <script type="text/javascript" src="index.js"></script>
+  <button id="hitung">Hitung</button>
 
-    <p align="center">Copyright shinta9911</p>
-  </body>
+  <h1 id="hasil"></h1>
+
+  <p align="center">Copyright shinta5</p>
+
+  <script src="index.js"></script>
+
+</body>
 </html>
-
